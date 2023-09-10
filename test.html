@@ -1,0 +1,119 @@
+
+
+<!doctype html>
+
+
+
+מערכת שעות
+
+
+
+
+
+
+function $startAll()
+{
+ obj=document.forms[0]; 
+ if(obj.old_sem.value!=''){obj.lstSem.value=obj.old_sem.value;}
+}
+//
+function chk_form_filter()
+{
+ obj=document.forms[0]; 
+ //
+ sem=trimstr(obj.lstSem.value);
+ if(sem=='0'){return retErr('פרמטר חיפוש סמסטר לא חוקי',obj.lstSem);}
+ if(sem==obj.old_sem.value){return retErr('נא לבחור סמסטר/שנה אחר מהמוצג',obj.lstSem);}
+ //
+ return chkFormEndShort(obj);
+}
+//
+function listsem_change()
+{
+ obj=document.forms[0];
+ chkFormEndShort(obj);
+ obj.submit();
+}
+//Mikraot
+function open_mikraot()
+{
+    //PrintWin=window.open('','ReadersApp','menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=yes,location=no,top=0,left=0,width=800,height=600');
+    document.frmmikraot.submit();
+}
+//Maraton- Xtra Student
+function open_maraton()
+{
+    //PrintWin=window.open('','MaratonPopUp','menubar=no,resizable=yes,scrollbars=yes,toolbar=no,status=yes,location=no,top=0,left=0,width=900,height=600');
+    document.frmmaraton.submit();
+}
+
+
+
+
+
+
+מערכת שעות
+
+תואר: 11-ב"א   תכנית לימודים: מגמה להנדסת חשמל חד-חוגי 
+
+
+
+
+
+
+
+סמסטר/שנה2023/2 - ב' תשפ"ד      (שנה"ל 2023/2024)2023/1 - א' תשפ"ד      (שנה"ל 2023/2024)   2023 - שנת תשפ"ד   (שנה"ל 2023/2024)---------------------------2022/3 - קיץ תשפ"ג     (שנה"ל 2022/2023)2022/2 - ב' תשפ"ג      (שנה"ל 2022/2023)2022/1 - א' תשפ"ג      (שנה"ל 2022/2023)   2022 - שנת תשפ"ג   (שנה"ל 2022/2023)
+
+	סקרקורסקב.שם קורסאופןמורהסמסיוםשעותבניןחדר
+    סקר0509-182011תכנות - (פייתון)  תרגמר איתן ברון  א א  08:00-10:00 צ'ק פוינט 001סילבוססקר0509-111701כלים מתמטיים לפיזיקה  שעורמר גרישה זלטין  א א  10:00-12:00 כיתות הנדסה 102סילבוססקר0509-172401אלגברה ליניארית לחשמל ואל  שעורד"ר יוחאי יוסף מעין  א א  13:00-16:00 הנדסת תוכנה 102סילבוססקר0509-174602חדו"א 1ב' לתלמידי חשמל  תרגמר יותם מעוז  א ב  08:00-10:00 כיתות הנדסה 207סילבוססקר0509-111801מכניקה קלאסית להנדסת חשמל  שעורד"ר לירון ברק  א ב  10:00-12:00 כיתות הנדסה 102סילבוססקר0509-182010תכנות - (פייתון)  שעורמר רוני קון  א ב  13:00-15:00 הנדסת תוכנה 102סילבוססקר0509-172401אלגברה ליניארית לחשמל ואל  שעורד"ר יוחאי יוסף מעין  א ג  10:00-12:00 הנדסת תוכנה 102סילבוססקר0509-111802מכניקה קלאסית להנדסת חשמל  תרגמר יהודה אריאל באום  א ג  12:00-14:00 כיתות הנדסה 207סילבוססקר0509-174601חדו"א 1ב' לתלמידי חשמל  שעורד"ר גיא לנדסמן  א ג  14:00-15:00 כיתות הנדסה 101סילבוססקר0509-174601חדו"א 1ב' לתלמידי חשמל  שעורד"ר גיא לנדסמן  א ה  08:00-11:00 כיתות הנדסה 101סילבוססקר0509-111801מכניקה קלאסית להנדסת חשמל  שעורד"ר לירון ברק  א ה  11:00-13:00 אודיטור' לב 009סילבוססקר0509-111702כלים מתמטיים לפיזיקה  תרגמר שחר קסירר  א ה  14:00-16:00 ולפסון הנדסה 120סילבוססקר0509-172402אלגברה ליניארית לחשמל ואל  תרגגב' סהר בשן  א ה  16:00-18:00 כיתות הנדסה 103סילבוססקר0512-356110מערכות לוגיות ספרתיות  שעורפרופ' גיא אבןפרופ' יצחק תמו  ב א  09:00-12:00 עבודה סוציאל 001סילבוססקר0509-174501מד"ר לחשמל ואלקטרוניקה  שעורד"ר יוחאי יוסף מעין  ב א  13:00-16:00 סמואלי 001סילבוססקר0512-401301מעבדת חשיפה לחומרה  מעבדפרופ' רג'א ג'יריספרופ' פבל גינזבורג  ב ב  08:00-12:00 כיתות הנדסה 201סילבוססקר0509-174704חדו"א 2ב' לחשמל  שעורד"ר לודמילה מרקוס  ב ג  08:00-10:00 כיתות הנדסה 102סילבוססקר0509-182912פיזיקה (2)  תרגמר זמיר הלר-אלגזי  ב ג  11:00-13:00 ולפסון הנדסה 120סילבוססקר0509-174502מד"ר לחשמל ואלקטרוניקה  תרגמר וואיל מטר  ב ג  13:00-14:00 הנדסת תוכנה 102סילבוססקר0609-100801מיינדפולנס ובודהיזם  שעורד"ר ריקרדו טרשד"ר רועי צהר  ב ג  18:00-20:00 גילמן 144סילבוססקר0509-174704חדו"א 2ב' לחשמל  שעורד"ר לודמילה מרקוס  ב ד ^08:00-10:00 כיתות הנדסה 101סילבוססקר0509-183411מעבדה בפיזיקה  מעבדד"ר יואב לחיני  ב ד ^08:00-12:00 פיזיקה-שנקר 201סילבוססקר0509-182910פיזיקה (2)  שעורפרופ' חיים סוכובסקי  ב ד ^11:00-13:00 הנדסת תוכנה 102סילבוססקר0512-356111מערכות לוגיות ספרתיות  תרגגב' מיכל חזן  ב ד  13:00-14:00 כיתות הנדסה 207סילבוססקר0509-182910פיזיקה (2)  שעורפרופ' חיים סוכובסקי  ב ה  09:00-11:00 ולפסון הנדסה 001סילבוססקר0509-174705חדו"א 2ב' לחשמל  תרגמר אלון אגין  ב ה  12:00-14:00 ולפסון הנדסה 406סילבוססה"כ שעות סמסטריאליות: 55.0^ - חפיפה בשעות, חל איסור להירשם לקורסים עם זמנים חופפים
+
+
+
+
+
+
+
+ ספרות זולה- לרשימת מקראות הקורסים, נא להקיש כאןאקסטרא   - לרשימת קורסי עזר ומרתונים מסובסדים לקראת המבחנים, נא להקיש כאן במידה והינך בעל/ת מוגבלות ושובצת לקורס הממוקם בכיתה שאינה נגישה,או שאת/ה מעוניין/נת לבדוק האם כיתה מסוימת נגישה,תוכל/י לפנות אל אגודת הסטודנטים באמצעות טופס ממוחשב, נא להקיש כאן
+
+
+ try{$startTopAll()} catch(e){}
+ try{$startAll()} catch(e){} try{$setTauLang();} catch(e){}
+00:00
+
+$(function() {$(document).tooltip({  items: 'td,th,img',  position: {  my:'center bottom-20',at:'center top', colission:'fit',  using: function(position, feedback) {    $(this).css(position);    $('<div>')   .addClass('arrow')   .addClass(feedback.vertical)   .addClass(feedback.horizontal)   .appendTo(this); }  }});});$(function (){$(document).tooltip({content: function (){return $(this).prop('title');},track:true});});
+    סוסטיאל תום (206712218)        נכון ל-10/09/2023 22:04    
+
+
+
+
+
+
+
+
+
+
+
+
+
+תרשים סמסטר א 
+
+
+
+
+
+
+
+
+
+
+
+תרשים סמסטר ב 
+
+
+
+(function(){var f5_cspm={f5_p:'OJKJEIDJLLPFIMNPGNMBDHDBGEJPDHFKFKGANKABHNCDBMLJEGLLFAAMFCDHPFJPHJEBFLHEAKKAAMOHKHDAEKJCALHIAJPOPFAOEHKHJJBGKILLLGBHFKLCEJCLGOMF',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0509996024aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());
