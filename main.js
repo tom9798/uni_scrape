@@ -7,9 +7,9 @@ const { resolve } = require('path');
 // Input actual details for testing
 // The software only sends them to the ims.tau.ac.il server, and does not store them
 
-let id = 206712218 ;
-let password = "Lego017669541244";
-let username = "tomsoustiel";
+let id = ;
+let password = "";
+let username = "";
 
 
 async function get_main_page(id, password, username) {
